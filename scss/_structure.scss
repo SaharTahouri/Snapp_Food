@@ -1,0 +1,119 @@
+$color-dark-pink: rgb(255, 0, 166);
+$color-light-pink: rgb(255, 56, 172);
+$color-very-dark-gray: rgb(58, 61, 66);
+$color-dark-gray: rgb(235, 237, 240);
+$color-medium-gray: rgb(83, 86, 92);
+$color-light-gray: rgb(166, 170, 173);
+$color-very-light-gray: rgb(249, 250, 251);
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+$color-light-gray-mobile: rgb(248, 249, 251);
+$color-medium-gray-mobile: rgba(19, 20, 31, 0.05);
+$color-dark-gray-mobile: rgb(64, 64, 64);
+$color-light-red-mobile: rgba(189, 39, 45, .04);
+$color-dark-red-mobile: rgb(189, 39, 45);
+$color-light-gray-text-mobile: rgb(163, 163, 163);
+
+$font-yekan: Yekan, Tahoma;
+
+@font-face {
+    font-family: Yekan;
+    src: url("../fonts/YekanBakh-Regular.ttf") format("ttf"), url("../fonts/YekanBakh-Regular.eot") format("eot");
+    src: url("../fonts/YekanBakh-Regular.woff2") format("woff2"), url("../fonts/YekanBakh-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url("../fonts/Sahel-FD.ttf") format("ttf"), url("../fonts/Sahel-FD.eot") format("eot");
+    src: url("../fonts/Sahel-FD.woff2") format("woff2"), url("../fonts/Sahel-FD.woff") format("woff");
+}
+
+@mixin flexLayout($f-d: row, $j-c: flex-start, $a-i: flex-start) {
+    display: flex;
+    flex-direction: $f-d;
+    justify-content: $j-c;
+    align-items: $a-i;
+}
+
+%border-style {
+    border-bottom-right-radius: 7.5rem;
+
+    @media (max-width: 959.98px) {
+        border-bottom-right-radius: 0;
+    }
+}
+
+%font-title {
+    font-weight: 700;
+    color: $color-very-dark-gray;
+}
+
+%button-pink {
+    min-width: 6.6875rem;
+    font-weight: 700;
+    border: .09375rem solid $color-dark-pink;
+    border-radius: .375rem;
+}
+
+%text-spaces {
+    margin-bottom: 2.5rem;
+    line-height: 2rem;
+}
+
+%item-box {
+    @include flexLayout(column);
+    gap: 12px;
+    width: 74.9vw;
+    min-width: 272px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 0 1.5px 0 rgba(0, 0, 0, .3);
+}
+
+%ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-yekan;
+    direction: rtl;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    background-color: rgb(244, 244, 244);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 3px solid $color-white;
+    border-radius: 16px;
+    background-color: rgb(184, 183, 183);
+    transition: all .2s linear;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: .0625rem .375rem;
+    cursor: pointer;
+}
+
+.mobile-border-top {
+    border-top: 8px solid rgb(242, 242, 242);
+}

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/m.main.css">
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <title>سفارش آنلاین از رستوران‌ها، ‌شیرینی‌فروشی‌ها، کافی‌شاپ‌ها، سوپرمارکت‌ها،‌ نانوایی‌ها و ...</title>
+</head>
+
+<body>
+
+    <div class="map-wrapper">
+        <div class="map-container">
+            <h3 class="map-header">
+                انتخاب آدرس
+            </h3>
+            <p class="map-descr">
+                برای مشاهده مناسب‌ترین پیشنهادها، ابتدا موقعیتتان را مشخص کنید.
+            </p>
+            <div class="main-map-container">
+                <div class="search-map-container">
+                    <div class="map-city">
+                        <span>
+                            تهران
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M4.875 5.568c-.072.097-.16.181-.263.249-.483.32-1.149.21-1.487-.25L.193 1.595A.978.978 0 0 1 0 1.013C0 .453.478 0 1.068 0h5.864c.22 0 .433.064.612.183.484.321.601.953.263 1.41L4.875 5.569z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input type="text" placeholder="جست‌وجوی محله">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="nonzero">
+                            <path id="" fill="#a3a3a3" fill-opacity="0" d="M0 0h24v24H0z"></path>
+                            <path fill="#a3a3a3"
+                                d="M10.5 2a8.5 8.5 0 0 1 6.677 13.761l3.88 3.882a1 1 0 0 1-1.414 1.414l-3.882-3.88A8.5 8.5 0 1 1 10.5 2zm0 2a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=51.327953338623054%2C35.66978599458078%2C51.438331604003906%2C35.71683857726185&amp;layer=mapnik">
+                </iframe>
+                <br>
+                <small>
+                    <a href="https://www.openstreetmap.org/#map=14/35.6933/51.3831">
+                        View Larger Map
+                    </a>
+                </small>
+            </div>
+            <div class="submit-wrapper">
+                <button>
+                    تایید
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="install-app">
+            <div class="install-app-container">
+                <div class="install-app-close">
+                    <img src="images/close.png" alt="close">
+                </div>
+                <div class="install-app-logo">
+                    <img src="images/mobile-logo.png" alt="logo">
+                </div>
+                <div class="install-app-descr">
+                    <p>
+                        اپلیکیشن اسنپ فود
+                    </p>
+                </div>
+            </div>
+            <button class="install-app-btn">
+                نصب
+            </button>
+        </div>
+        <div class="user-menu">
+            <div class="profile"></div>
+            <div class="pick-address">
+                <div class="pick-address-container">
+                    <span>
+                        آدرس خود را انتخاب کنید
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        style="vertical-align: middle;">
+                        <g fill="none" fill-rule="nonzero">
+                            <path fill="#BD272D"
+                                d="M12.7913 4.79305C13.1818 4.40246 13.815 4.40237 14.2055 4.79283C14.5961 5.1833 14.5962 5.81646 14.2057 6.20704L9.20727 11.207C8.81676 11.5977 8.18351 11.5977 7.79294 11.2071L2.79308 6.20714C2.40256 5.81661 2.40257 5.18345 2.7931 4.79293C3.18363 4.40241 3.81679 4.40242 4.20731 4.79295L8.49996 9.08571L12.7913 4.79305Z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="transform: scaleX(-1);">
+                    <g fill="none" fill-rule="nonzero">
+                        <path fill="#404040" fill-opacity="0" d="M0 0h24v24H0z"></path>
+                        <path fill="#404040"
+                            d="M10 23a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM4.208 4H2a1 1 0 1 1 0-2h3a1 1 0 0 1 .973.771L6.733 6H21a1 1 0 0 1 .977 1.212l-1.596 7.373A2.995 2.995 0 0 1 17.4 17H9.7c-1.454.028-2.718-.99-2.993-2.381L4.208 4zm2.995 4l1.458 6.195c.094.475.516.814 1.019.805h7.74c.483.01.905-.33 1.003-.822L19.76 8H7.203z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search-container">
+                <input type="search" placeholder="جستجو در اسنپ‌فود">
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="nonzero">
+                            <path id="" fill="rgba(83, 86, 92, 0.7)" fill-opacity="0" d="M0 0h24v24H0z"></path>
+                            <path fill="rgba(83, 86, 92, 0.7)"
+                                d="M10.5 2a8.5 8.5 0 0 1 6.677 13.761l3.88 3.882a1 1 0 0 1-1.414 1.414l-3.882-3.88A8.5 8.5 0 1 1 10.5 2zm0 2a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bottom-navbar">
+        <div class="bottom-navbar-item">
+            <div>
+                <span class="bottom-navbar-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="nonzero">
+                            <path fill="#FF00A4" fill-opacity="0" d="M0 0h24v24H0z"></path>
+                            <path fill="#FF00A4"
+                                d="M18.5 19a.5.5 0 0 0 .5-.5V9.394c0-.057.005-.114.014-.169l-6.44-4.208a1 1 0 0 0-1.147 0L4.986 9.225c.01.055.014.112.014.17V18.5a.5.5 0 0 0 .5.5H9v-5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5h3.5zm2.5-.5a2.5 2.5 0 0 1-2.5 2.5H14a1 1 0 0 1-1-1v-5h-2v5a1 1 0 0 1-1 1H5.5A2.5 2.5 0 0 1 3 18.5v-8.106c-.978 0-1.374-1.258-.573-1.819l7.853-5.197a3 3 0 0 1 3.44 0l7.853 5.197c.801.56.405 1.82-.573 1.82V18.5z">
+                            </path>
+                        </g>
+                    </svg>
+                </span>
+                <span class="bottom-navbar-item-text">
+                    خانه
+                </span>
+            </div>
+        </div>
+        <div class="bottom-navbar-item">
+            <div>
+                <span class="bottom-navbar-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.9834 19.562C18.6548 18.3555 19.6724 16.5273 19.6724 14.6147C19.6724 11.9473 18.1296 9.43133 16.072 6.91024L15.9284 7.05392C14.962 8.02071 13.3442 7.82118 12.6417 6.64854L11.2075 4.25465C9.85176 5.69117 8.60052 7.1572 7.51943 8.73248C5.98201 10.9727 5.0774 13.0366 5.0774 14.6147C5.0774 16.5273 6.09492 18.3555 7.76636 19.562C7.5124 18.886 7.37488 18.1532 7.37488 17.4053C7.37488 16.2116 7.93636 14.7656 8.47549 13.62C9.03634 12.4283 9.6666 11.3727 9.95754 10.9023C10.4257 10.1452 11.4847 10.1652 11.96 10.8561L13.6298 13.283L14.2545 12.6821C14.8332 12.1255 15.7991 12.2799 16.161 13.0164C16.7896 14.2955 17.3749 15.7841 17.3749 17.4053C17.3749 18.1532 17.2374 18.886 16.9834 19.562ZM16.8891 4.77042C16.6556 4.49739 16.3083 4.38596 15.9808 4.43888L15.9717 4.44039C15.7754 4.47396 15.5867 4.56666 15.4344 4.71909L14.5139 5.64001C14.4678 5.68604 14.3908 5.67654 14.3573 5.6207L12.2473 2.09865C11.9134 1.54117 11.1442 1.4449 10.6894 1.90908C8.94654 3.68779 7.28363 5.54155 5.87041 7.60079C4.28237 9.91474 3.0774 12.4035 3.0774 14.6147C3.0774 19.2247 7.23417 23.0011 12.3749 23.0011C17.5156 23.0011 21.6724 19.2247 21.6724 14.6147C21.6724 10.8416 19.2739 7.5582 16.8891 4.77042ZM12.5831 15.2902L11.0281 13.03C10.792 13.4542 10.5305 13.9503 10.2851 14.4717C9.74843 15.6121 9.37488 16.6994 9.37488 17.4053C9.37488 19.4953 10.8251 20.9936 12.3749 20.9936C13.9246 20.9936 15.3749 19.4954 15.3749 17.4053C15.3749 16.5789 15.1599 15.7534 14.8218 14.9114L14.2519 15.4596C13.7626 15.9302 12.9679 15.8496 12.5831 15.2902Z"
+                            fill="#404040"></path>
+                    </svg>
+                </span>
+                <span class="new-item">
+                    جدید
+                </span>
+                <span class="bottom-navbar-item-text">
+                    تخفیف روز
+                </span>
+            </div>
+        </div>
+        <div class="bottom-navbar-item">
+            <div>
+                <span class="bottom-navbar-item-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.16663 4.73828C6.06206 4.73828 5.16663 5.63371 5.16663 6.73828V21.3509L6.8504 20.7896C7.07478 20.7148 7.31841 20.722 7.53802 20.8098L9.66663 21.6612L11.7952 20.8098C12.0336 20.7144 12.2996 20.7144 12.538 20.8098L14.6666 21.6612L16.7952 20.8098C17.0148 20.722 17.2585 20.7148 17.4829 20.7896L19.1666 21.3509V6.73828C19.1666 5.63371 18.2712 4.73828 17.1666 4.73828H7.16663ZM3.16663 6.73828C3.16663 4.52914 4.95749 2.73828 7.16663 2.73828H17.1666C19.3758 2.73828 21.1666 4.52914 21.1666 6.73828V22.7383C21.1666 23.0597 21.0121 23.3616 20.7513 23.5495C20.4906 23.7375 20.1553 23.7886 19.8504 23.687L17.1979 22.8028L15.038 23.6668C14.7996 23.7621 14.5336 23.7621 14.2952 23.6668L12.1666 22.8153L10.038 23.6668C9.79961 23.7621 9.53365 23.7621 9.29523 23.6668L7.13534 22.8028L4.48285 23.687C4.1779 23.7886 3.84269 23.7375 3.58192 23.5495C3.32115 23.3616 3.16663 23.0597 3.16663 22.7383V6.73828ZM8.16663 9.73828C8.16663 9.186 8.61434 8.73828 9.16663 8.73828H15.1666C15.7189 8.73828 16.1666 9.186 16.1666 9.73828C16.1666 10.2906 15.7189 10.7383 15.1666 10.7383H9.16663C8.61434 10.7383 8.16663 10.2906 8.16663 9.73828ZM8.16663 15.7383C8.16663 15.186 8.61434 14.7383 9.16663 14.7383H15.1666C15.7189 14.7383 16.1666 15.186 16.1666 15.7383C16.1666 16.2906 15.7189 16.7383 15.1666 16.7383H9.16663C8.61434 16.7383 8.16663 16.2906 8.16663 15.7383Z"
+                            fill="#404040"></path>
+                    </svg>
+                </span>
+                <span class="bottom-navbar-item-text">
+                    سفارش‌ها
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="profile-wrapper bottom-navbar-item">
+        <div class="profile">
+            <div>
+                <span class="bottom-navbar-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                        name="shopping-cart" style="transform: scaleX(-1);">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.5 14C18.2614 14 20.5 16.2386 20.5 19V21C20.5 21.5523 20.0523 22 19.5 22C18.9477 22 18.5 21.5523 18.5 21V19C18.5 17.3431 17.1569 16 15.5 16H9.5C7.84315 16 6.5 17.3431 6.5 19V21C6.5 21.5523 6.05228 22 5.5 22C4.94772 22 4.5 21.5523 4.5 21V19C4.5 16.2386 6.73858 14 9.5 14H15.5ZM12.5 2C15.2614 2 17.5 4.23858 17.5 7C17.5 9.76142 15.2614 12 12.5 12C9.73858 12 7.5 9.76142 7.5 7C7.5 4.23858 9.73858 2 12.5 2ZM12.5 4C10.8431 4 9.5 5.34315 9.5 7C9.5 8.65685 10.8431 10 12.5 10C14.1569 10 15.5 8.65685 15.5 7C15.5 5.34315 14.1569 4 12.5 4Z"
+                            fill="#404040"></path>
+                    </svg>
+                </span>
+                <span class="bottom-navbar-item-text">
+                    حساب من
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-shell">
+        <div class="categories">
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/restaurant.png" alt="رستوران">
+                </div>
+                <span class="category-item-text">
+                    رستوران
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/supermarket.png" alt="سوپرمارکت">
+                </div>
+                <span class="category-item-text">
+                    سوپرمارکت
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/cafe.png" alt="کافه">
+                </div>
+                <span class="category-item-text">
+                    کافه
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/sweet.png" alt="شیرینی">
+                </div>
+                <span class="category-item-text">
+                    شیرینی
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/bread.png" alt="نانوایی">
+                </div>
+                <span class="category-item-text">
+                    نانوایی
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/fruit.png" alt="میوه">
+                </div>
+                <span class="category-item-text">
+                    میوه
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/meat.png" alt="پروتئین">
+                </div>
+                <span class="category-item-text">
+                    پروتئین
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/icecream.png" alt="آبمیوه بستنی">
+                </div>
+                <span class="category-item-text">
+                    آبمیوه بستنی
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/dairy.png" alt="لبنیات">
+                </div>
+                <span class="category-item-text">
+                    لبنیات
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/flower.png" alt="گل و گیاه">
+                </div>
+                <span class="category-item-text">
+                    گل و گیاه
+                </span>
+            </a>
+            <a href="#" class="category-item">
+                <div class="category-item-img">
+                    <img src="images/coffe.png" alt="قهوه و شکلات">
+                </div>
+                <span class="category-item-text">
+                    قهوه و شکلات
+                </span>
+            </a>
+            <div class="category-item">
+                <button class="category-item-btn">
+                    <svg width="24" height="5" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.375 2C7.375 0.89543 8.27043 0 9.375 0C10.4796 0 11.375 0.89543 11.375 2C11.375 3.10457 10.4796 4 9.375 4C8.27043 4 7.375 3.10457 7.375 2ZM14.375 2C14.375 0.89543 15.2704 0 16.375 0C17.4796 0 18.375 0.89543 18.375 2C18.375 3.10457 17.4796 4 16.375 4C15.2704 4 14.375 3.10457 14.375 2ZM0.375 2C0.375 0.89543 1.27043 0 2.375 0C3.47957 0 4.375 0.89543 4.375 2C4.375 3.10457 3.47957 4 2.375 4C1.27043 4 0.375 3.10457 0.375 2Z"
+                            fill="#404040"></path>
+                    </svg>
+                </button>
+                <span class="category-item-text">
+                    همه دسته‌ها
+                </span>
+            </div>
+        </div>
+
+        <div class="banner" style="padding-top: 0;">
+            <a href="#">
+                <img src="images/banner1.png" alt="banner1" class="banner-img">
+            </a>
+        </div>
+
+        <section class="resturant-categories">
+            <div class="resturant-categories-title">
+                <h2>
+                    دسته‌بندی‌ رستوران
+                </h2>
+            </div>
+            <div class="resturant-categories-item-container">
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/irani.png" alt="ایرانی">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                ایرانی
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/fastfood.png" alt="فست‌فود">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                فست‌فود
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/kebab.png" alt="کباب">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                کباب
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/pizza.png" alt="پیتزا">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                پیتزا
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/burger.png" alt="برگر">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                برگر
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/sandwich.png" alt="ساندویچ">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                ساندویچ
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/sokhari.png" alt="سوخاری">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                سوخاری
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/pasta.png" alt="پاستا">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                پاستا
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/salad.png" alt="سالاد">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                سالاد
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/sea.png" alt="دریایی">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                دریایی
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/international.png" alt="بین‌الملل">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                بین‌الملل
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="resturant-categories-item">
+                    <a href="#">
+                        <div class="resturant-categories-item-img">
+                            <img src="images/guilani.png" alt="گیلانی">
+                        </div>
+                        <div class="resturant-categories-item-title">
+                            <h3>
+                                گیلانی
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="banner">
+            <a href="#">
+                <img src="images/banner2.jpg" alt="banner2" class="banner-img">
+            </a>
+        </div>
+
+        <div class="off">
+            <div class="off-header">
+                <div class="off-header-title">
+                    <svg width="24" height="24" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.0434 3.83203C12.0652 7.51351 9.09868 10.5163 5.41602 10.5381C9.09868 10.5163 12.1008 13.4837 12.1224 17.1654C12.1008 13.4837 15.068 10.4811 18.7493 10.4591C15.068 10.4811 12.0652 7.51351 12.0434 3.83203Z"
+                            stroke="url(#paint0_linear_5543_66650)" stroke-width="1.66667"></path>
+                        <path
+                            d="M5.39033 0.5C5.4053 3.03102 3.36582 5.09545 0.833984 5.11043C3.36582 5.09545 5.42974 7.13555 5.44461 9.66667C5.42974 7.13555 7.46973 5.07121 10.0007 5.05614C7.46973 5.07121 5.4053 3.03102 5.39033 0.5Z"
+                            fill="url(#paint1_linear_5543_66650)"></path>
+                        <path
+                            d="M5.39033 11.332C5.4053 13.863 3.36582 15.9275 0.833984 15.9425C3.36582 15.9275 5.42974 17.9676 5.44461 20.4987C5.42974 17.9676 7.46973 15.9032 10.0007 15.8882C7.46973 15.9032 5.4053 13.863 5.39033 11.332Z"
+                            fill="url(#paint2_linear_5543_66650)"></path>
+                        <defs>
+                            <linearGradient id="paint0_linear_5543_66650" x1="17.4995" y1="15" x2="1.99945" y2="1"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF00A4"></stop>
+                                <stop offset="1" stop-color="#FF00A4" stop-opacity="0.3"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_5543_66650" x1="10.0007" y1="9.66667" x2="-6.74578"
+                                y2="-7.07976" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#A3A3A3"></stop>
+                                <stop offset="1" stop-color="#A3A3A3" stop-opacity="0.1"></stop>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_5543_66650" x1="10.0007" y1="20.4987" x2="-6.74578"
+                                y2="3.75227" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00D170"></stop>
+                                <stop offset="1" stop-color="#00D170" stop-opacity="0"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>
+                        فود پارتی
+                    </span>
+                </div>
+                <div class="off-header-countdown">
+                    <span class="till-end">
+                        تا پایان
+                    </span>
+                    <div class="time">
+                        <span id="hour">05</span>
+                        <span>:</span>
+                        <span id="minute">00</span>
+                        <span>:</span>
+                        <span id="second">00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="off-items">
+                <div class="see-all">
+                    <button class="see-all-btn">
+                        مشاهده همه
+                    </button>
+                    <span class="see-all-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#FFF"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner slider-banner">
+            <a href="#" class="fade">
+                <img src="images/slide-banner-1.png" alt="slide-banner-1" class="banner-img">
+            </a>
+            <a href="#" class="fade">
+                <img src="images/slide-banner-2.jpg" alt="slide-banner-2" class="banner-img">
+            </a>
+            <a href="#" class="fade">
+                <img src="images/slide-banner-3.jpg" alt="slide-banner-3" class="banner-img">
+            </a>
+            <div class="banner-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="off">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.5078 6.50684H0V19.4912H17.5078C18.3604 19.4912 19.2046 19.3232 19.9923 18.997C20.7799 18.6707 21.4956 18.1925 22.0985 17.5896C22.7013 16.9868 23.1796 16.2711 23.5058 15.4834C23.8321 14.6958 24 13.8516 24 12.999C24 12.1464 23.8321 11.3022 23.5058 10.5146C23.1796 9.72689 22.7013 9.0112 22.0985 8.40835C21.4956 7.80549 20.7799 7.32728 19.9923 7.00102C19.2046 6.67476 18.3604 6.50684 17.5078 6.50684ZM14.1356 13.0124C14.1356 10.8572 15.9572 9.11282 18.2046 9.11282C20.4517 9.11282 22.2734 10.8591 22.2734 13.0124C22.2734 15.1658 20.453 16.9117 18.2046 16.9117C15.9563 16.9117 14.1356 15.1676 14.1356 13.0124ZM19.2241 14.3703C19.4851 14.1094 19.6318 13.7554 19.6319 13.3862V12.6386C19.6319 12.4558 19.5959 12.2748 19.5259 12.1059C19.456 11.937 19.3534 11.7836 19.2242 11.6543C19.0949 11.525 18.9414 11.4225 18.7726 11.3525C18.6037 11.2826 18.4226 11.2466 18.2398 11.2466H18.1694C17.8002 11.2466 17.4462 11.3932 17.1851 11.6543C16.924 11.9153 16.7774 12.2694 16.7774 12.6386V13.3862C16.7774 13.7554 16.9241 14.1094 17.1852 14.3703C17.4463 14.6313 17.8003 14.778 18.1694 14.778H18.2398C18.609 14.778 18.963 14.6313 19.2241 14.3703ZM11.7146 9.1094C9.15199 9.1094 7.68391 10.5392 7.68391 12.9473C7.68391 15.2265 9.07474 16.9008 11.367 16.9014C12.218 16.9014 12.8513 16.8095 13.6023 16.6367C13.6197 16.6327 13.6361 16.6252 13.6506 16.6147C13.6651 16.6043 13.6773 16.591 13.6865 16.5757C13.6958 16.5604 13.7018 16.5434 13.7044 16.5258C13.7069 16.5081 13.7059 16.4901 13.7014 16.4728L13.1055 14.2357C12.5903 14.3902 12.1526 14.4805 11.7919 14.4805C10.9677 14.4805 10.5428 14.0167 10.5428 12.8707C10.5428 11.9047 11.0708 11.5185 11.8691 11.5185C12.2299 11.5185 12.642 11.5951 13.0927 11.7365L13.6658 9.54081C13.6745 9.50763 13.6701 9.47237 13.6534 9.44237C13.6368 9.41238 13.6092 9.38996 13.5764 9.37977C13.0313 9.21001 12.5183 9.1094 11.7146 9.1094ZM7.24284 8.23877H1.69824V17.312C1.69824 17.4311 1.74556 17.5454 1.82978 17.6297C1.91401 17.714 2.02826 17.7614 2.14742 17.7615H7.24253V15.6047H4.25966V13.8668H6.82512V12.1437H4.25966V10.4009H7.24284V8.23877Z"
+                                    fill="#F6A500"></path>
+                            </g>
+                        </svg>
+                        <span>
+                            خوش‌قیمت‌‌
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <p>
+                    به اندازه و با کیفیت
+                </p>
+            </div>
+            <div class="off-items eco">
+            </div>
+        </div>
+
+        <div class="food-story mobile-border-top">
+            <h2>
+                فود استوری
+            </h2>
+
+            <div class="food-story-items">
+            </div>
+        </div>
+
+        <div class="banner">
+            <a href="#">
+                <img src="images/banner4.png" alt="banner4" class="banner-img">
+            </a>
+        </div>
+
+        <div class="off">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            جایزه خرید
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+
+        <div class="off mobile-border-top">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            برترین‌ها
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+
+        <div class="off mobile-border-top">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            شام با اسنپ‌فود
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+
+        <div class="off mobile-border-top">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            ویترین
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+
+        <div class="off mobile-border-top">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            مزه‌های خاص
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+
+        <div class="banner">
+            <a href="#">
+                <img src="images/banner5.png" alt="banner4" class="banner-img">
+            </a>
+        </div>
+
+        <div class="off">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            دارای تخفیف
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+
+        <div class="off mobile-border-top">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            کوپن سفارش اول
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+
+        <div class="off mobile-border-top">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            ارسال رایگان
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+
+        <div class="off mobile-border-top">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            حرفه‌ای‌ها در اسنپ‌فود
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+
+        <div class="off mobile-border-top">
+            <div class="off-header-two">
+                <a href="#" class="off-header-link">
+                    <div class="off-header-title">
+                        <span>
+                            دارای کوپن
+                        </span>
+                    </div>
+                    <div class="off-header-show-all">
+                        <span>
+                            نمایش همه
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            style="vertical-align: middle;">
+                            <g fill="none" fill-rule="nonzero">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="#22A958"
+                                    d="M15.707 4.707L8.414 12l7.293 7.293a1 1 0 0 1-1.414 1.414l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="suggestion-items">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/m.app.js"></script>
+</body>
+
+</html>
